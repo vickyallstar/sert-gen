@@ -3,12 +3,12 @@ async function generateYapping() {
   const resultDiv = document.getElementById("result");
 
   if (!input) {
-    alert("Tolong isi teks dulu!");
+    alert("Tolong isi nama dulu!");
     return;
   }
 
-  if (input.length > 100) {
-    alert("Maksimal 100 karakter!");
+  if (input.length > 25) {
+    alert("Maksimal 25 karakter untuk nama!");
     return;
   }
 

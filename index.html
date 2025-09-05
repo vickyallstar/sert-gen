@@ -3,54 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sertifikat Generate</title>
+  <title>Sertifikat Generator</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f7fc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
       margin: 0;
+      color: #fff;
+    }
+    .container {
+      background: #ffffff20;
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      max-width: 350px;
+      width: 90%;
     }
     h1 {
-      color: #333;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
     }
     input {
-      padding: 10px;
-      width: 250px;
-      border: 2px solid #ccc;
-      border-radius: 8px;
-      margin-bottom: 10px;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 15px;
       outline: none;
+      font-size: 1rem;
     }
     button {
-      padding: 10px 20px;
-      background: #4cafef;
+      padding: 12px 20px;
+      background: #00c6ff;
+      background: linear-gradient(45deg, #00c6ff, #0072ff);
       color: white;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
       transition: 0.3s;
+      font-size: 1rem;
+      width: 100%;
     }
     button:hover {
-      background: #2196f3;
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #0072ff, #00c6ff);
     }
     img {
       margin-top: 20px;
-      max-width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+    #result {
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
-  <h1>Sertifikat Generator</h1>
-  <input type="text" id="userInput" placeholder="Masukkan teks (max 100 karakter)">
-  <button onclick="generateYapping()">Generate</button>
-  <div id="result"></div>
+  <div class="container">
+    <h1>Sertifikat Generator</h1>
+    <input type="text" id="userInput" placeholder="Masukkan Nama">
+    <button onclick="generateYapping()">Generate</button>
+    <div id="result"></div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
