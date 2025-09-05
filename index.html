@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sertifikat Generate</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      color: #333;
+    }
+    input {
+      padding: 10px;
+      width: 250px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      outline: none;
+    }
+    button {
+      padding: 10px 20px;
+      background: #4cafef;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #2196f3;
+    }
+    img {
+      margin-top: 20px;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Sertifikat Generator</h1>
+  <input type="text" id="userInput" placeholder="Masukkan teks (max 100 karakter)">
+  <button onclick="generateYapping()">Generate</button>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>
